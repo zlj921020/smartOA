@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyHtml.html</title>
+		<meta charset="UTF-8">
+		<title>测试jquery</title>
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/util/StringUtil.js"></script>
+		<script src="js/util/IDCardUtil.js"></script>
+
+	</head>
+
+	<body>
+		<span>测试jquery新</span>
+		<br/>
+		<br/>
+		<br/>
+		<br />
+		<br/>
+		<input type="text" name="身份证号码" id="sfzhm" maxlength="18" onchange="sad();"/>
+	</body>
+	<script type="text/javascript">
+        function sad() {
+            var xb = IDCardUtil.getXbFromSfzhm($('#sfzhm').val());
+            alert(xb);
+
+        }
+
+	</script>
+</html>
